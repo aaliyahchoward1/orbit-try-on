@@ -4,7 +4,7 @@
 
 Entry for the [YouCam API Skin AI & eCommerce VTO Hackathon](https://youcam-api-skin-ai-ecommerce.devpost.com/) (Perfect Corp · eCommerce VTO).
 
-**Try it:** https://lunuff-astro-podra-2.replit.app/shade-finder
+**Try it:** live link coming with the submission
 
 ## What it does
 
@@ -63,7 +63,7 @@ Design choices worth noting:
 
 ## Source layout
 
-This repo mirrors the try-on module. The running app (Lunuff, Odd Orbit Beauty's companion app) is hosted on Replit, where this module is mounted at `/api/shade-finder` and served at `/shade-finder`.
+The server lives in `src/`. The hosted app mounts it at `/api/shade-finder`.
 
 ```
 src/server/youcam.ts    YouCam File API, task creation, polling, effect payloads

@@ -125,7 +125,7 @@ export function createShadeFinderRouter(dependencies = {
     const body = z.object({ scanToken: tokenSchema, productId: z.string().max(80), liner: z.boolean() }).strict().parse(req.body);
     const state = findScan(body.scanToken);
     const product = lipProducts.find(item => item.id === body.productId);
-    if (!product) throw new ShadeError("shade", "please choose one of lunuff's shades.");
+    if (!product) throw new ShadeError("shade", "please choose one of the four shades.");
     const key = `${body.scanToken}:${product.id}:${body.liner}`;
     let preview = previews.get(key);
     if (!preview) {
@@ -153,7 +153,7 @@ export function createShadeFinderRouter(dependencies = {
       ? new ShadeError("invalid_request", "please check your photo, vibe and shade selection.")
       : typed?.type === "entity.too.large"
         ? new ShadeError("image_large", "this upload is too large. please choose a photo under 10 mb.", 413)
-        : new ShadeError("unavailable", "lunuff couldn't finish this preview. please try again shortly.", 503);
+        : new ShadeError("unavailable", "we couldn't finish this preview. please try again shortly.", 503);
     // This router deliberately lives before the global JSON-response logger.
     // Never log errors, raw provider responses, images or temporary image URLs.
     if (!res.headersSent) res.status(safe.status).json({ code: safe.code, message: safe.message });

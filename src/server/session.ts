@@ -15,7 +15,7 @@ function key() {
   // A stable server-only key lets guest sessions work across autoscale instances
   // without storing photos, derived colors or result links in the database.
   if (!process.env.SESSION_SECRET) throw new ShadeError("configuration", "shade finder is temporarily unavailable.", 503);
-  return createHash("sha256").update("lunuff-shade-session-v1:").update(process.env.SESSION_SECRET).digest();
+  return createHash("sha256").update("orbit-try-on-session-v1:").update(process.env.SESSION_SECRET).digest();
 }
 export function sealSession(session: ShadeSession): string {
   const nonce = randomBytes(12);

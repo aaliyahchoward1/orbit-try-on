@@ -9,7 +9,7 @@ export class ShadeError extends Error {
 export function providerError(code: unknown, httpStatus = 400): ShadeError {
   const value = String(code ?? "").toLowerCase();
   if (/credit|insufficien|balance/.test(value) || httpStatus === 402)
-    return new ShadeError("credits", "lunuff is out of preview credits for now. please try again later.", 503);
+    return new ShadeError("credits", "the try-on is out of preview credits for now. please try again later.", 503);
   if (/too_small|below_min/.test(value))
     return new ShadeError("face_small", "move a little closer: your whole face should fill most of the photo.");
   if (/angle|forward_facing/.test(value))
@@ -25,6 +25,6 @@ export function providerError(code: unknown, httpStatus = 400): ShadeError {
   if (httpStatus === 401 || httpStatus === 403)
     return new ShadeError("configuration", "live previews aren't available right now. please try again later.", 503);
   if (httpStatus === 429)
-    return new ShadeError("provider_busy", "lunuff is helping a few starfriends. please wait a moment and try again.", 429);
+    return new ShadeError("provider_busy", "the try-on is helping a few starfriends. please wait a moment and try again.", 429);
   return new ShadeError("provider_error", "we couldn't process this photo. try a clear, front-facing selfie with your whole face visible.", 502);
 }

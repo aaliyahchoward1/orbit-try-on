@@ -11,7 +11,7 @@ Orbit Try-On
 See a handmade brand's real lip glosses on your own lips, then buy the necklace they live in. YouCam skin-tone analysis + lip try-on for a one-woman beauty shop.
 
 ## Try it out (links)
-- https://lunuff-astro-podra-2.replit.app/shade-finder
+- (Orbit Try-On live link: add after publishing)
 - https://github.com/aaliyahchoward1/orbit-try-on
 - https://www.etsy.com/shop/OddOrbitBeauty
 

@@ -72,8 +72,8 @@ The physical gloss is the truth; these hexes are starting approximations to cali
 - Not yet registered on Devpost / YouCam API (step 1).
 
 ### Update — Oct 28, 2026
-- App built on Replit (Lunuff app, `/shade-finder`), published at https://lunuff-astro-podra-2.replit.app/shade-finder.
+- Standalone Orbit Try-On app being built on Replit from this repo's `src/` (try-on only, nothing else).
 - Uses two YouCam APIs: AI Skin Tone Analysis + Makeup VTO (lip_color + optional lip_liner).
 - All four shade hexes sampled from real product photos (see README).
-- Try-on module source mirrored in `src/`; Devpost text in `SUBMISSION.md`; video script in `DEMO_SCRIPT.md`.
-- Left for the founder: add `YOUCAM_API_KEY` + `YOUCAM_MOCK_MODE=false` in Replit Secrets and republish, test on a real selfie, take screenshots, record and upload the video, submit by Sunday Nov 1.
+- Devpost text in `SUBMISSION.md`; video script in `DEMO_SCRIPT.md`.
+- Left for the founder: add `YOUCAM_API_KEY` + `YOUCAM_MOCK_MODE=false` in the new app's Secrets and publish, test a real selfie, take screenshots, record and upload the video, submit by Sunday Nov 1.
