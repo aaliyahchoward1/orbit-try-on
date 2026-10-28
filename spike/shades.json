@@ -1,1 +1,95 @@
-{"_note":"Digital starting points for the YouCam AI Makeup VTO lip_color effect. The physical gloss is the truth — calibrate these against real swatches. Shape 'original' is a valid label from lipshape.json. Schema verified against YouCam API docs (v1.9, AI Makeup Vto section).","aquariosa":{"effect":{"category":"lip_color","palettes":[{"color":"#4A7FB5","colorIntensity":60,"gloss":60,"shimmerColor":"#8FC3EA","shimmerDensity":50,"shimmerIntensity":60,"shimmerSize":50,"texture":"shimmer","transparencyIntensity":50}],"shape":{"name":"original"},"style":{"type":"full"}},"name":"Aquariosa","notes":"Iridescent blue — shimmer texture, not gloss. Silver-tone cage in production."},"black-siren":{"effect":{"category":"lip_color","palettes":[{"color":"#201418","colorIntensity":60,"gloss":70,"texture":"gloss","transparencyIntensity":40}],"shape":{"name":"original"},"style":{"type":"full"}},"name":"Black Siren","notes":"Near-black gloss, warm undertone. Silver-tone cage in production."},"blood-moon":{"effect":{"category":"lip_color","palettes":[{"color":"#B81E4A","colorIntensity":65,"gloss":70,"texture":"gloss","transparencyIntensity":40}],"shape":{"name":"original"},"style":{"type":"full"}},"name":"Blood Moon","notes":"Raspberry pink-red gloss — NOT deep blood-red. Gold-tone Nebula tube filled with the red gloss."},"nebula":{"effect":{"category":"lip_color","palettes":[{"color":"#5B2A86","colorIntensity":60,"gloss":70,"texture":"gloss","transparencyIntensity":40}],"shape":{"name":"original"},"style":{"type":"full"}},"name":"Nebula","notes":"Deep purple gloss. Gold-tone cage and chain in production."}}
+{
+  "_note": "Colors sampled from real product photos on Oct 28, 2026 and lightened slightly for how gloss reads on lips. Live app catalog: src/server/products.ts.",
+  "aquariosa": {
+    "effect": {
+      "category": "lip_color",
+      "palettes": [
+        {
+          "color": "#2E6FA8",
+          "colorIntensity": 60,
+          "gloss": 60,
+          "shimmerColor": "#8FC3EA",
+          "shimmerDensity": 50,
+          "shimmerIntensity": 60,
+          "shimmerSize": 50,
+          "texture": "shimmer",
+          "transparencyIntensity": 45
+        }
+      ],
+      "shape": {
+        "name": "original"
+      },
+      "style": {
+        "type": "full"
+      }
+    },
+    "name": "Aquariosa",
+    "notes": "Ocean blue, sampled from Etsy product photos, Oct 28 2026. Silver-tone cage."
+  },
+  "black-siren": {
+    "effect": {
+      "category": "lip_color",
+      "palettes": [
+        {
+          "color": "#3B2A20",
+          "colorIntensity": 60,
+          "gloss": 70,
+          "texture": "gloss",
+          "transparencyIntensity": 55
+        }
+      ],
+      "shape": {
+        "name": "original"
+      },
+      "style": {
+        "type": "full"
+      }
+    },
+    "name": "Black Siren",
+    "notes": "Sheer bronze-brown on lips (sampled from wrist swatch photo, Oct 28 2026)."
+  },
+  "blood-moon": {
+    "effect": {
+      "category": "lip_color",
+      "palettes": [
+        {
+          "color": "#7A2E3B",
+          "colorIntensity": 65,
+          "gloss": 70,
+          "texture": "gloss",
+          "transparencyIntensity": 40
+        }
+      ],
+      "shape": {
+        "name": "original"
+      },
+      "style": {
+        "type": "full"
+      }
+    },
+    "name": "Blood Moon",
+    "notes": "Deep oxblood red, sampled from founder photos, Oct 28 2026. Gold-tone cage."
+  },
+  "nebula": {
+    "effect": {
+      "category": "lip_color",
+      "palettes": [
+        {
+          "color": "#6E2F68",
+          "colorIntensity": 60,
+          "gloss": 70,
+          "texture": "gloss",
+          "transparencyIntensity": 40
+        }
+      ],
+      "shape": {
+        "name": "original"
+      },
+      "style": {
+        "type": "full"
+      }
+    },
+    "name": "Nebula",
+    "notes": "Plum-magenta (Nebula's Gaze), sampled from Etsy product photos, Oct 28 2026. Gold-tone cage."
+  }
+}
